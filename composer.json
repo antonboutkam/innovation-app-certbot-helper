@@ -1,0 +1,38 @@
+{
+    "name": "hurah/certbot-helper",
+    "description": "Small utility that helps setting up SSL certificates for the Novum Innovation app",
+    "require": {
+        "symfony/console": "5.x-dev",
+        "hurah/data-types": "^1.0.2-dev",
+        "hurah/innovation-app-util-http": "dev-master",
+        "php" : "^7.4",
+        "ext-json": "^7.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.3@dev"
+    },
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Anton Boutkam",
+            "email": "anton@nui-boutkam.nl"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+
+        "psr-4": {
+            "Hurah\\CertBot\\" : "src/CertBot"
+        }
+    },
+    "autoload-dev": {
+
+        "psr-4": {
+            "Test\\Hurah\\CertBot\\" : "tests/"
+        }
+    },
+    "bin" : [
+        "bin/certbot.php"
+    ]
+}
