@@ -1,7 +1,7 @@
 # CertBot utility
 <p align="center"><img src="https://gitlab.com/NovumGit/innovation-app-core/-/raw/master/assets/novum.png"  alt="Novum logo"/></p>
 
-##What is this?
+## What is this?
 
 This is a component of the Novum Innovation app. It scans for plugins / sites that make use of SSL/http**s** and 
 generates SSL certificates for them using the CertBot Docker container.

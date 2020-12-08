@@ -120,7 +120,7 @@ class CertBot extends Command {
 
         if(!$this->oOutputDir->isDir())
         {
-            $output->writeln("<comment>Creating directory <info>{$this->oOutputDir}</info></comment>");
+            $output->writeln("<comment>Creating directory </comment> <info>{$this->oOutputDir}</info>");
             $this->oOutputDir->makeDir();
         }
 
@@ -135,7 +135,7 @@ class CertBot extends Command {
             return Command::SUCCESS;
         }
 
-        $output->writeln('<error>Certificate generation failed with exit code ' . $iStatusCode . '</info>');
+        $output->writeln('<error>Certificate generation failed with exit code ' . $iStatusCode . '</error>');
         $output->writeln($oDockerCertGenerator->getErrorOutput());
         return Command::FAILURE;
     }
