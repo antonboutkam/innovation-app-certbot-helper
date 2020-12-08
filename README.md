@@ -16,7 +16,7 @@ The command will exucute something in the order of this:
 ```
 \#!/usr/bin/env bash
 
-docker run -it --rm --name certbot \
+docker run --rm --name certbot \
       -v "$(pwd)/data/certbot:/data/certbot" \
       -v "$(pwd)/data/certbot:/etc/letsencrypt" \
       -v "/var/lib/letsencrypt:/var/lib/letsencrypt" \

@@ -19,10 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d125806-e425-4a95-84ff-41cb4be5575e" name="Default Changelist" comment="[+] Display errors when they occur, added some more verbose logging.">
+    <list default="true" id="0d125806-e425-4a95-84ff-41cb4be5575e" name="Default Changelist" comment="[+] Fixing incorrectly nested styletag">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CertBot/Command/Generator/CertBot.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/CertBot/Command/Generator/CertBot.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CertBot/Helper/Docker.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/CertBot/Helper/Docker.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +173,8 @@
     <MESSAGE value="[+] Downgrade to composer v1 for now because some dependencies are incompatible." />
     <MESSAGE value="[+] Update composer.lock, hurah-installer version was outdated." />
     <MESSAGE value="[+] Display errors when they occur, added some more verbose logging." />
-    <option name="LAST_COMMIT_MESSAGE" value="[+] Display errors when they occur, added some more verbose logging." />
+    <MESSAGE value="[+] Fixing incorrectly nested styletag" />
+    <option name="LAST_COMMIT_MESSAGE" value="[+] Fixing incorrectly nested styletag" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1590" y="648" width="654" height="729" key="#PHP" timestamp="1607433470417">
@@ -195,34 +197,34 @@
       <screen x="0" y="0" width="3840" height="2160" />
     </state>
     <state x="1743" y="953" width="342" height="170" key="ComposerInitDialogKey/0.0.3840.2160@0.0.3840.2160" timestamp="1607432173943" />
-    <state x="1686" y="718" width="432" height="484" key="FileChooserDialogImpl" timestamp="1607433493952">
+    <state x="1682" y="692" width="432" height="484" key="FileChooserDialogImpl" timestamp="1607438688382">
       <screen x="0" y="0" width="3840" height="2160" />
     </state>
-    <state x="1686" y="718" width="432" height="484" key="FileChooserDialogImpl/0.0.3840.2160@0.0.3840.2160" timestamp="1607433493952" />
-    <state width="1635" height="634" key="GridCell.Tab.0.bottom" timestamp="1607436918807">
+    <state x="1682" y="692" width="432" height="484" key="FileChooserDialogImpl/0.0.3840.2160@0.0.3840.2160" timestamp="1607438688382" />
+    <state width="1788" height="634" key="GridCell.Tab.0.bottom" timestamp="1607438708973">
       <screen x="0" y="0" width="3840" height="2160" />
     </state>
-    <state width="1635" height="634" key="GridCell.Tab.0.bottom/0.0.3840.2160@0.0.3840.2160" timestamp="1607436918807" />
-    <state width="1635" height="634" key="GridCell.Tab.0.center" timestamp="1607436918806">
+    <state width="1788" height="634" key="GridCell.Tab.0.bottom/0.0.3840.2160@0.0.3840.2160" timestamp="1607438708973" />
+    <state width="1788" height="634" key="GridCell.Tab.0.center" timestamp="1607438708972">
       <screen x="0" y="0" width="3840" height="2160" />
     </state>
-    <state width="1635" height="634" key="GridCell.Tab.0.center/0.0.3840.2160@0.0.3840.2160" timestamp="1607436918806" />
-    <state width="1635" height="634" key="GridCell.Tab.0.left" timestamp="1607436918806">
+    <state width="1788" height="634" key="GridCell.Tab.0.center/0.0.3840.2160@0.0.3840.2160" timestamp="1607438708972" />
+    <state width="1788" height="634" key="GridCell.Tab.0.left" timestamp="1607438708972">
       <screen x="0" y="0" width="3840" height="2160" />
     </state>
-    <state width="1635" height="634" key="GridCell.Tab.0.left/0.0.3840.2160@0.0.3840.2160" timestamp="1607436918806" />
-    <state width="1635" height="634" key="GridCell.Tab.0.right" timestamp="1607436918807">
+    <state width="1788" height="634" key="GridCell.Tab.0.left/0.0.3840.2160@0.0.3840.2160" timestamp="1607438708972" />
+    <state width="1788" height="634" key="GridCell.Tab.0.right" timestamp="1607438708973">
       <screen x="0" y="0" width="3840" height="2160" />
     </state>
-    <state width="1635" height="634" key="GridCell.Tab.0.right/0.0.3840.2160@0.0.3840.2160" timestamp="1607436918807" />
+    <state width="1788" height="634" key="GridCell.Tab.0.right/0.0.3840.2160@0.0.3840.2160" timestamp="1607438708973" />
     <state x="1412" y="673" key="SettingsEditor" timestamp="1607432803475">
       <screen x="0" y="0" width="3840" height="2160" />
     </state>
     <state x="1412" y="673" key="SettingsEditor/0.0.3840.2160@0.0.3840.2160" timestamp="1607432803475" />
-    <state x="1482" y="592" width="808" height="528" key="Vcs.Push.Dialog.v2" timestamp="1607438325911">
+    <state x="1478" y="566" width="808" height="528" key="Vcs.Push.Dialog.v2" timestamp="1607438609708">
       <screen x="0" y="0" width="3840" height="2160" />
     </state>
-    <state x="1482" y="592" width="808" height="528" key="Vcs.Push.Dialog.v2/0.0.3840.2160@0.0.3840.2160" timestamp="1607438325911" />
+    <state x="1478" y="566" width="808" height="528" key="Vcs.Push.Dialog.v2/0.0.3840.2160@0.0.3840.2160" timestamp="1607438609708" />
     <state x="1559" y="783" width="869" height="510" key="com.jetbrains.php.test.PhpNewTestDialog" timestamp="1607428841290">
       <screen x="0" y="0" width="3840" height="2160" />
     </state>

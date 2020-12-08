@@ -19,7 +19,6 @@ class Docker extends TestCase
         $aCommand = [
             $dockerBin,
             'run',
-            '-it',
             '--rm',
             '--name',
             'CertBot',
