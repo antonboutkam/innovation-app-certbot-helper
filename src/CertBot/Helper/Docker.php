@@ -5,10 +5,9 @@ namespace Hurah\CertBot\Helper;
 use Hurah\Types\Type\DnsNameCollection;
 use Hurah\Types\Type\Email;
 use Hurah\Types\Type\Path;
-use PHPUnit\Framework\TestCase;
 use Symfony\Component\Process\ExecutableFinder;
 
-class Docker extends TestCase
+class Docker
 {
 
     private function getDockerExecutable():string
