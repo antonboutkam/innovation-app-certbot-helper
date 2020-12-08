@@ -120,19 +120,19 @@ class CertBot extends Command {
             $this->oOutputDir->makeDir();
         }
 
-        $oDockerHelper = new Docker();
+        $output->writeln("<comment>Spinning up docker container</comment>");
 
+        $oDockerHelper = new Docker();
         $oDockerCertGenerator = new Process($oDockerHelper->makeCommand($this->oEmail, $this->oDnsNameCollection, $this->oOutputDir));
 
-        if($oDockerCertGenerator->run() === Command::SUCCESS)
+        if($iStatusCode = $oDockerCertGenerator->run() === Command::SUCCESS)
         {
             $output->writeln('<info>Certificates generated succesfully</info>');
             return Command::SUCCESS;
         }
 
-
-        // $output->writeln('<error>Certificate generation failed with exit code ' . $oDockerCertGenerator->getExitCodeText() . '</info>');
-        // $output->writeln($oDockerCertGenerator->getErrorOutput());
+        $output->writeln('<error>Certificate generation failed with exit code ' . $iStatusCode . '</info>');
+        $output->writeln($oDockerCertGenerator->getErrorOutput());
         return Command::FAILURE;
     }
 
