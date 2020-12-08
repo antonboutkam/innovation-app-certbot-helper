@@ -424,19 +424,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/antonboutkam/hurah-installer.git",
-                "reference": "ddbfe905f1f25c0789a40c0c12ac95f4bb51ea6d"
+                "reference": "96d4b6c6f894e92d5352249fcd4e058845558cb9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/antonboutkam/hurah-installer/zipball/ddbfe905f1f25c0789a40c0c12ac95f4bb51ea6d",
-                "reference": "ddbfe905f1f25c0789a40c0c12ac95f4bb51ea6d",
+                "url": "https://api.github.com/repos/antonboutkam/hurah-installer/zipball/96d4b6c6f894e92d5352249fcd4e058845558cb9",
+                "reference": "96d4b6c6f894e92d5352249fcd4e058845558cb9",
                 "shasum": ""
             },
             "require": {
                 "composer-plugin-api": "^1.0",
                 "composer/composer": "1.10.*",
-                "ext-json": "*",
-                "ext-mysqli": "*"
+                "ext-json": "*"
             },
             "require-dev": {
                 "phpunit/phpunit": "^9.3@dev"
@@ -455,7 +454,7 @@
                 "MIT"
             ],
             "description": "Installer scripts for Hurah!",
-            "time": "2020-12-04T09:33:10+00:00"
+            "time": "2020-12-08T14:16:47+00:00"
         },
         {
             "name": "hurah/innovation-app-util-http",
