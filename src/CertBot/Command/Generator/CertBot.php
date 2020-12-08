@@ -84,7 +84,11 @@ class CertBot extends Command {
         {
             ++$iAttempt;
 
-            if(!$oEmail->isValid())
+            if("{$oEmail->isValid()}" == "")
+            {
+                $output->writeln("<error>No email address specified.</error>");
+            }
+            else if(!$oEmail->isValid())
             {
                 $output->writeln("<error>$oEmail is not a valid e-mail address.</error>");
             }
