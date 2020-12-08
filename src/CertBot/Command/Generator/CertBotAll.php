@@ -13,8 +13,6 @@ use Symfony\Component\Console\Question\Question;
 
 class CertBotAll extends Command {
 
-    private Email $oEmail;
-
     protected function configure() {
 
         $this->setName("certificate:generate-all");
@@ -45,10 +43,11 @@ class CertBotAll extends Command {
 
             $helper = $this->getHelper('question');
             $question = new Question('<question>Please provide a valid e-mail address:</question> ', false);
-            $oEmail = new Email($helper->ask($input, $output, $question));
+            $sEmail = $helper->ask($input, $output, $question);
+            $oEmail = new Email($sEmail);
         }
 
-        $this->oEmail = $oEmail;
+        $input->setArgument('email', "{$oEmail}");
     }
 
     protected function execute(InputInterface $input, OutputInterface $output) {
@@ -67,7 +66,7 @@ class CertBotAll extends Command {
 
         $aArguments = new ArrayInput($aInput = [
             '--domain' => $aDnsNames,
-            '--email' => $this->oEmail
+            '--email' => $input->getArgument('email')
         ]);
 
         $output->writeln(json_encode($aInput));
