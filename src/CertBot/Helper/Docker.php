@@ -11,10 +11,15 @@ use Symfony\Component\Process\ExecutableFinder;
 class Docker extends TestCase
 {
 
-    function makeCommand(Email $oEmail, DnsNameCollection $oDnsNameCollection, Path $oOutputDir) : array
+    private function getDockerExecutable():string
     {
         $finder = new ExecutableFinder();
-        $dockerBin = $finder->find('docker');
+        return $finder->find('docker');
+    }
+
+    public function makeRunCommand(Email $oEmail, DnsNameCollection $oDnsNameCollection, Path $oOutputDir) : array
+    {
+        $dockerBin = $this->getDockerExecutable();
 
         $aCommand = [
             $dockerBin,
@@ -28,7 +33,7 @@ class Docker extends TestCase
             "/var/lib/letsencrypt:/var/lib/letsencrypt",
             '-p',
             '80:80',
-            'CertBot/CertBot',
+            'certbot/certbot',
             'certonly',
             '--standalone',
             '--preferred-challenges',

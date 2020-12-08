@@ -127,7 +127,7 @@ class CertBot extends Command {
         $output->writeln("<comment>Spinning up docker container</comment>");
 
         $oDockerHelper = new Docker();
-        $oDockerCertGenerator = new Process($oDockerHelper->makeCommand($this->oEmail, $this->oDnsNameCollection, $this->oOutputDir));
+        $oDockerCertGenerator = new Process($oDockerHelper->makeRunCommand($this->oEmail, $this->oDnsNameCollection, $this->oOutputDir));
 
         if($iStatusCode = $oDockerCertGenerator->run() === Command::SUCCESS)
         {

@@ -19,11 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d125806-e425-4a95-84ff-41cb4be5575e" name="Default Changelist" comment="[+] Fixing incorrectly nested styletag">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="0d125806-e425-4a95-84ff-41cb4be5575e" name="Default Changelist" comment="[+] Removed -it flag as it was causing an error (“The input device is not a TTY”)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CertBot/Command/Generator/CertBot.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/CertBot/Command/Generator/CertBot.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CertBot/Helper/Docker.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/CertBot/Helper/Docker.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Helper/DockerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Helper/DockerTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,7 +174,8 @@
     <MESSAGE value="[+] Update composer.lock, hurah-installer version was outdated." />
     <MESSAGE value="[+] Display errors when they occur, added some more verbose logging." />
     <MESSAGE value="[+] Fixing incorrectly nested styletag" />
-    <option name="LAST_COMMIT_MESSAGE" value="[+] Fixing incorrectly nested styletag" />
+    <MESSAGE value="[+] Removed -it flag as it was causing an error (“The input device is not a TTY”)" />
+    <option name="LAST_COMMIT_MESSAGE" value="[+] Removed -it flag as it was causing an error (“The input device is not a TTY”)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1590" y="648" width="654" height="729" key="#PHP" timestamp="1607433470417">
@@ -221,10 +222,10 @@
       <screen x="0" y="0" width="3840" height="2160" />
     </state>
     <state x="1412" y="673" key="SettingsEditor/0.0.3840.2160@0.0.3840.2160" timestamp="1607432803475" />
-    <state x="1478" y="566" width="808" height="528" key="Vcs.Push.Dialog.v2" timestamp="1607438609708">
+    <state x="1474" y="540" width="808" height="528" key="Vcs.Push.Dialog.v2" timestamp="1607439212725">
       <screen x="0" y="0" width="3840" height="2160" />
     </state>
-    <state x="1478" y="566" width="808" height="528" key="Vcs.Push.Dialog.v2/0.0.3840.2160@0.0.3840.2160" timestamp="1607438609708" />
+    <state x="1474" y="540" width="808" height="528" key="Vcs.Push.Dialog.v2/0.0.3840.2160@0.0.3840.2160" timestamp="1607439212725" />
     <state x="1559" y="783" width="869" height="510" key="com.jetbrains.php.test.PhpNewTestDialog" timestamp="1607428841290">
       <screen x="0" y="0" width="3840" height="2160" />
     </state>
