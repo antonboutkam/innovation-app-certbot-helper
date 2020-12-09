@@ -27,7 +27,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0d125806-e425-4a95-84ff-41cb4be5575e" name="Default Changelist" comment="Finishing up dns name collector">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CertBot/Helper/Docker.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/CertBot/Helper/Docker.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,10 +217,10 @@
       <screen x="0" y="0" width="3840" height="2160" />
     </state>
     <state x="1743" y="953" width="342" height="170" key="ComposerInitDialogKey/0.0.3840.2160@0.0.3840.2160" timestamp="1607432173943" />
-    <state x="1678" y="666" width="432" height="484" key="FileChooserDialogImpl" timestamp="1607452233907">
+    <state x="1674" y="640" width="432" height="484" key="FileChooserDialogImpl" timestamp="1607512478971">
       <screen x="0" y="0" width="3840" height="2160" />
     </state>
-    <state x="1678" y="666" width="432" height="484" key="FileChooserDialogImpl/0.0.3840.2160@0.0.3840.2160" timestamp="1607452233907" />
+    <state x="1674" y="640" width="432" height="484" key="FileChooserDialogImpl/0.0.3840.2160@0.0.3840.2160" timestamp="1607512478971" />
     <state width="1788" height="634" key="GridCell.Tab.0.bottom" timestamp="1607438708973">
       <screen x="0" y="0" width="3840" height="2160" />
     </state>
@@ -236,14 +237,18 @@
       <screen x="0" y="0" width="3840" height="2160" />
     </state>
     <state width="1788" height="634" key="GridCell.Tab.0.right/0.0.3840.2160@0.0.3840.2160" timestamp="1607438708973" />
+    <state x="2319" y="800" width="728" height="476" key="MultipleFileMergeDialog" timestamp="1607512137790">
+      <screen x="0" y="0" width="3840" height="2160" />
+    </state>
+    <state x="2319" y="800" width="728" height="476" key="MultipleFileMergeDialog/0.0.3840.2160@0.0.3840.2160" timestamp="1607512137790" />
     <state x="1412" y="673" key="SettingsEditor" timestamp="1607432803475">
       <screen x="0" y="0" width="3840" height="2160" />
     </state>
     <state x="1412" y="673" key="SettingsEditor/0.0.3840.2160@0.0.3840.2160" timestamp="1607432803475" />
-    <state x="1466" y="488" width="808" height="528" key="Vcs.Push.Dialog.v2" timestamp="1607441276350">
+    <state x="1462" y="462" width="808" height="528" key="Vcs.Push.Dialog.v2" timestamp="1607512123855">
       <screen x="0" y="0" width="3840" height="2160" />
     </state>
-    <state x="1466" y="488" width="808" height="528" key="Vcs.Push.Dialog.v2/0.0.3840.2160@0.0.3840.2160" timestamp="1607441276350" />
+    <state x="1462" y="462" width="808" height="528" key="Vcs.Push.Dialog.v2/0.0.3840.2160@0.0.3840.2160" timestamp="1607512123855" />
     <state x="1559" y="783" width="869" height="510" key="com.jetbrains.php.test.PhpNewTestDialog" timestamp="1607428841290">
       <screen x="0" y="0" width="3840" height="2160" />
     </state>

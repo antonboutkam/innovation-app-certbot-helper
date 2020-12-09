@@ -40,15 +40,18 @@ class Docker
             '--agree-tos',
             "-m",
             "{$oEmail}",
-
+            "-d"
         ];
 
+        $aDnsNames = [];
         foreach($oDnsNameCollection->toArray() as $oDnsName)
         {
-            $aCommand[] = "-d";
-            $aCommand[] = "{$oDnsName}";
+            $aDnsNames[] = "{$oDnsName}";
         }
 
+        $aCommand[] = join(', ', $aDnsNames);
+
+        echo join(' ', $aCommand) . PHP_EOL;
         return $aCommand;
     }
 
