@@ -25,9 +25,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d125806-e425-4a95-84ff-41cb4be5575e" name="Default Changelist" comment="- Doing a separate request for each domainname now">
+    <list default="true" id="0d125806-e425-4a95-84ff-41cb4be5575e" name="Default Changelist" comment="Bugfix was generating commands but only running the last">
+      <change afterPath="$PROJECT_DIR$/bin/monitor.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CertBot/Command/Generator/CertBot.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/CertBot/Command/Generator/CertBot.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +195,8 @@
     <MESSAGE value="Finishing up dns name collector" />
     <MESSAGE value="- Domain names had to be a comma separated list" />
     <MESSAGE value="- Doing a separate request for each domainname now" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Doing a separate request for each domainname now" />
+    <MESSAGE value="Bugfix was generating commands but only running the last" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bugfix was generating commands but only running the last" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1590" y="648" width="654" height="729" key="#PHP" timestamp="1607433470417">
@@ -246,10 +247,10 @@
       <screen x="0" y="0" width="3840" height="2160" />
     </state>
     <state x="1412" y="673" key="SettingsEditor/0.0.3840.2160@0.0.3840.2160" timestamp="1607432803475" />
-    <state x="1454" y="410" width="808" height="528" key="Vcs.Push.Dialog.v2" timestamp="1607519125823">
+    <state x="1450" y="384" width="808" height="528" key="Vcs.Push.Dialog.v2" timestamp="1607519719002">
       <screen x="0" y="0" width="3840" height="2160" />
     </state>
-    <state x="1454" y="410" width="808" height="528" key="Vcs.Push.Dialog.v2/0.0.3840.2160@0.0.3840.2160" timestamp="1607519125823" />
+    <state x="1450" y="384" width="808" height="528" key="Vcs.Push.Dialog.v2/0.0.3840.2160@0.0.3840.2160" timestamp="1607519719002" />
     <state x="1559" y="783" width="869" height="510" key="com.jetbrains.php.test.PhpNewTestDialog" timestamp="1607428841290">
       <screen x="0" y="0" width="3840" height="2160" />
     </state>
