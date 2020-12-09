@@ -72,6 +72,7 @@ class CertBotAll extends Command {
         $output->writeln(json_encode($aInput));
         $oCommand->run($aArguments, $output);
 
+
         return Command::SUCCESS;
 
     }

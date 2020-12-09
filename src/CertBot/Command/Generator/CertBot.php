@@ -127,11 +127,21 @@ class CertBot extends Command {
         $output->writeln("<comment>Spinning up docker container</comment>");
 
         $oDockerHelper = new Docker();
-        $oDockerCertGenerator = new Process($oDockerHelper->makeRunCommand($this->oEmail, $this->oDnsNameCollection, $this->oOutputDir));
+
+        // Running the Docker container once for each domain so each domain will have it's own certificate in a separate
+        // file. When running all at once Docker will generate just a single certificate for each domain
+        $oDnsNameIterator = $this->oDnsNameCollection->getIterator();
+        foreach($oDnsNameIterator as $oDnsName)
+        {
+            $oDnsNameCollection = new DnsNameCollection();
+            $oDnsNameCollection->add($oDnsName);
+            $oDockerCertGenerator = new Process($oDockerHelper->makeRunCommand($this->oEmail, $oDnsNameCollection, $this->oOutputDir));
+        }
+
 
         if($iStatusCode = $oDockerCertGenerator->run() === Command::SUCCESS)
         {
-            $output->writeln('<info>Certificates generated succesfully</info>');
+            $output->writeln('<info>Certificates generated succesfully</inf  o>');
             return Command::SUCCESS;
         }
 
