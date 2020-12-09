@@ -25,8 +25,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d125806-e425-4a95-84ff-41cb4be5575e" name="Default Changelist" comment="Added task-monitor.sh script which will look for cert requests and create them">
-      <change beforePath="$PROJECT_DIR$/src/CertBot/Helper/Docker.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/CertBot/Helper/Docker.php" afterDir="false" />
+    <list default="true" id="0d125806-e425-4a95-84ff-41cb4be5575e" name="Default Changelist" comment="Changed outside port to 8080 so webserver hopefully does not need to be turned off during cert renewal">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/task-monitor.sh" beforeDir="false" afterPath="$PROJECT_DIR$/bin/certbot-inotifywait.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,7 +198,8 @@
     <MESSAGE value="- Doing a separate request for each domainname now" />
     <MESSAGE value="Bugfix was generating commands but only running the last" />
     <MESSAGE value="Added task-monitor.sh script which will look for cert requests and create them" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added task-monitor.sh script which will look for cert requests and create them" />
+    <MESSAGE value="Changed outside port to 8080 so webserver hopefully does not need to be turned off during cert renewal" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed outside port to 8080 so webserver hopefully does not need to be turned off during cert renewal" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1590" y="648" width="654" height="729" key="#PHP" timestamp="1607433470417">
@@ -247,10 +250,10 @@
       <screen x="0" y="0" width="3840" height="2160" />
     </state>
     <state x="1412" y="673" key="SettingsEditor/0.0.3840.2160@0.0.3840.2160" timestamp="1607432803475" />
-    <state x="1446" y="358" width="808" height="528" key="Vcs.Push.Dialog.v2" timestamp="1607555676664">
+    <state x="1442" y="332" width="808" height="528" key="Vcs.Push.Dialog.v2" timestamp="1607555774404">
       <screen x="0" y="0" width="3840" height="2160" />
     </state>
-    <state x="1446" y="358" width="808" height="528" key="Vcs.Push.Dialog.v2/0.0.3840.2160@0.0.3840.2160" timestamp="1607555676664" />
+    <state x="1442" y="332" width="808" height="528" key="Vcs.Push.Dialog.v2/0.0.3840.2160@0.0.3840.2160" timestamp="1607555774404" />
     <state x="1559" y="783" width="869" height="510" key="com.jetbrains.php.test.PhpNewTestDialog" timestamp="1607428841290">
       <screen x="0" y="0" width="3840" height="2160" />
     </state>

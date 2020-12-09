@@ -33,6 +33,7 @@
         }
     },
     "bin" : [
-        "bin/certbot.php"
+        "bin/certbot.php",
+        "bin/certbot-inotifywait.sh"
     ]
 }
