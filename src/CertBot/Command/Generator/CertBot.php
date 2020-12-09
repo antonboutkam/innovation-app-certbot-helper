@@ -131,23 +131,30 @@ class CertBot extends Command {
         // Running the Docker container once for each domain so each domain will have it's own certificate in a separate
         // file. When running all at once Docker will generate just a single certificate for each domain
         $oDnsNameIterator = $this->oDnsNameCollection->getIterator();
+        $bHadErrors = false;
         foreach($oDnsNameIterator as $oDnsName)
         {
             $oDnsNameCollection = new DnsNameCollection();
             $oDnsNameCollection->add($oDnsName);
             $oDockerCertGenerator = new Process($oDockerHelper->makeRunCommand($this->oEmail, $oDnsNameCollection, $this->oOutputDir));
+
+            if($iStatusCode = $oDockerCertGenerator->run() === Command::SUCCESS)
+            {
+                $output->writeln("<info>Certificate for {$oDnsName} generated succesfully</info>");
+            }
+            else
+            {
+                $output->writeln("<error>Certificate generation for {$oDnsName} failed with exit code " . $iStatusCode . '</error>');
+                $output->writeln($oDockerCertGenerator->getErrorOutput());
+                $bHadErrors = true;
+            }
         }
 
-
-        if($iStatusCode = $oDockerCertGenerator->run() === Command::SUCCESS)
+        if($bHadErrors)
         {
-            $output->writeln('<info>Certificates generated succesfully</inf  o>');
-            return Command::SUCCESS;
+            return Command::FAILURE;
         }
-
-        $output->writeln('<error>Certificate generation failed with exit code ' . $iStatusCode . '</error>');
-        $output->writeln($oDockerCertGenerator->getErrorOutput());
-        return Command::FAILURE;
+        return Command::SUCCESS;
     }
 
 }
