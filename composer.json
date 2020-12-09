@@ -3,7 +3,7 @@
     "description": "Small utility that helps setting up SSL certificates for the Novum Innovation app",
     "require": {
         "symfony/console": "5.x-dev",
-        "hurah/data-types": "^1.0.2-dev",
+        "hurah/data-types": "^1.0.3",
         "hurah/innovation-app-util-http": "dev-master",
         "php" : "^7.4",
         "ext-json": "^7.4"

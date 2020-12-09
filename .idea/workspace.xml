@@ -16,17 +16,18 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:main" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d125806-e425-4a95-84ff-41cb4be5575e" name="Default Changelist" comment="Finishing up dns name collector">
-      <change afterPath="$PROJECT_DIR$/src/CertBot/Command/Generator/CertBotAll.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CertBot/Helper/DnsNameFinder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CertBot/Helper/PackageFinder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CertBot/Helper/PluginFinder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CertBot/Helper/DirectoryStructure.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/CertBot/Helper/DirectoryStructure.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CertBot/Helper/Docker.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/CertBot/Helper/Docker.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +162,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
