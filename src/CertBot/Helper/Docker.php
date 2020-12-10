@@ -31,7 +31,7 @@ class Docker
             '-v',
             "/var/lib/letsencrypt:/var/lib/letsencrypt",
             '-p',
-            '8080:80',
+            '80:80',
             'certbot/certbot',
             'certonly',
             '--standalone',

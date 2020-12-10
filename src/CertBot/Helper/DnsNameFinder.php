@@ -22,10 +22,10 @@ class DnsNameFinder
 
         foreach ($aComposerObjects as $oComposer)
         {
-            if($oComposer->getType() === new PluginType(PluginType::DOMAIN))
+            if("{$oComposer->getType()}" === PluginType::DOMAIN)
             {
                 echo "This package is a domain " . PHP_EOL;
-                $sDomainConfigFile = DomainCreator::makePath($oDirectoryStructure->getSystemRoot(), 'vendor', $oComposer->getName(), 'config.php');
+                $sDomainConfigFile = DomainCreator::makePath('.', 'vendor', $oComposer->getName(), 'config.php');
                 $aDomainConfig = require $sDomainConfigFile;
                 echo "Loading $sDomainConfigFile " . PHP_EOL;
                 $bIsSsl = false;
