@@ -22,12 +22,11 @@ class DnsNameFinder
 
         foreach ($aComposerObjects as $oComposer)
         {
-            if("{$oComposer->getType()}" === PluginType::DOMAIN)
+            if($oComposer->getType() === new PluginType(PluginType::DOMAIN))
             {
-                echo "This package is a domain " . PHP_EOL;
-                $sDomainConfigFile = DomainCreator::makePath('.', 'vendor', $oComposer->getName(), 'config.php');
+                $sDomainConfigFile = DomainCreator::makePath($oDirectoryStructure->getSystemRoot(), 'vendor', $oComposer->getName(), 'config.php');
                 $aDomainConfig = require $sDomainConfigFile;
-                echo "Loading $sDomainConfigFile " . PHP_EOL;
+
                 $bIsSsl = false;
                 if(isset($aDomainConfig['PORT']) && $aDomainConfig['PORT'] === 443)
                 {
@@ -39,22 +38,12 @@ class DnsNameFinder
                 }
                 if($bIsSsl && isset($aDomainConfig['DOMAIN']))
                 {
-                    echo "Adding domain {$aDomainConfig['DOMAIN']} " . PHP_EOL;
                     $aDnsList->add($aDomainConfig['DOMAIN']);
-                }
-                else
-                {
-                    echo "SKipping domain {$aDomainConfig['DOMAIN']} " . PHP_EOL;
                 }
             }
             else if(in_array((string) $oComposer->getType(), [PluginType::API, PluginType::SITE]))
             {
-                echo "This package is a domain " . PHP_EOL;
                 $aDnsList->add($oComposer->getExtra()['install_dir']);
-            }
-            else
-            {
-                echo "Unsupported type  " . $oComposer->getType() . PHP_EOL;
             }
 
         }

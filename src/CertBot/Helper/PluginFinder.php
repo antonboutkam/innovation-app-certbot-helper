@@ -20,22 +20,18 @@ class PluginFinder
         $aComposerPathIterator = $aComposerPaths->getIterator();
         foreach ($aComposerPathIterator as $oComposerPath)
         {
-            echo "Checking $oComposerPath " . PHP_EOL;
             $sComposer = file_get_contents($oComposerPath);
             $aComposer = JsonUtils::decode((string)$sComposer);
             if(!isset($aComposer['type']))
             {
-                echo "Failed because type not set" . PHP_EOL;
                 continue;
             }
 
             if(!preg_match('/^(novum|hurah)-(site|api|domain)/', $aComposer['type']))
             {
-                echo "Failed because type incorrect" . PHP_EOL;
                 continue;
             }
 
-            echo "Success, is a candidate" . PHP_EOL;
             $aComposerObjects[] = Composer::fromArray($aComposer);
         }
         return $aComposerObjects;

@@ -12,7 +12,10 @@ class DirectoryStructure {
     static function getSysRoot(): Path {
         return new Path(dirname(__DIR__, 3));
     }
-
+    static function getDataDir() : Path
+    {
+        return FileSystem::makePath('./', 'data');
+    }
     static function getRootVendorDir() : Path
     {
         $reflection = new ReflectionClass(ClassLoader::class);

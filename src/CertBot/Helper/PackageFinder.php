@@ -14,7 +14,7 @@ class PackageFinder extends TestCase
     {
         $oRootVendorDir = DirectoryStructure::getRootVendorDir();
         $oFinder = new Finder();
-        return $oFinder->files()->followLinks()->name('composer.json')->in($oRootVendorDir)->depth('< 3');
+        return $oFinder->files()->name('composer.json')->in($oRootVendorDir)->depth('< 3');
     }
 
 

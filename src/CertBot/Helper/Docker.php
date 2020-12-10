@@ -40,24 +40,15 @@ class Docker
             '--agree-tos',
             "-m",
             "{$oEmail}",
-            "-d"
+
         ];
 
-        $aDnsNames = [];
         foreach($oDnsNameCollection->toArray() as $oDnsName)
         {
-            if(file_exists("{$oOutputDir}/live/{$oDnsName}"))
-            {
-                echo "Cert for {$oDnsName} already exists, SKIPPING ". PHP_EOL;
-                continue;
-            }
-
-            $aDnsNames[] = "{$oDnsName}";
+            $aCommand[] = "-d";
+            $aCommand[] = "{$oDnsName}";
         }
 
-        $aCommand[] = join(', ', $aDnsNames);
-
-        echo join(' ', $aCommand) . PHP_EOL;
         return $aCommand;
     }
 
