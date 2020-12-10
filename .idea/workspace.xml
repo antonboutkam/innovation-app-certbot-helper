@@ -20,15 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d125806-e425-4a95-84ff-41cb4be5575e" name="Default Changelist" comment="Start file watch script">
-      <change afterPath="$PROJECT_DIR$/src/CertBot/Command/Auto/Installer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/certbot-inotifywait.sh" beforeDir="false" afterPath="$PROJECT_DIR$/bin/certbot-inotifywait.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/certbot.php" beforeDir="false" afterPath="$PROJECT_DIR$/bin/certbot.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CertBot/Helper/DirectoryStructure.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/CertBot/Helper/DirectoryStructure.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CertBot/Helper/DnsNameFinder.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/CertBot/Helper/DnsNameFinder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CertBot/Helper/Docker.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/CertBot/Helper/Docker.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CertBot/Helper/PackageFinder.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/CertBot/Helper/PackageFinder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CertBot/Helper/PluginFinder.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/CertBot/Helper/PluginFinder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CertBot/Helper/DockerCompose.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,6 +154,14 @@
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task id="LOCAL-00001" summary="Start file watch script">
+      <created>1607583435877</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607583435877</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -270,10 +270,11 @@
       <screen x="0" y="0" width="3840" height="2160" />
     </state>
     <state x="1412" y="673" key="SettingsEditor/0.0.3840.2160@0.0.3840.2160" timestamp="1607432803475" />
-    <state x="1414" y="150" width="808" height="528" key="Vcs.Push.Dialog.v2" timestamp="1607570295395">
-      <screen x="0" y="0" width="3840" height="2160" />
+    <state x="611" y="88" width="580" height="214" key="Vcs.Push.Dialog.v2" timestamp="1607583437680">
+      <screen x="35" y="27" width="1565" height="873" />
     </state>
     <state x="1414" y="150" width="808" height="528" key="Vcs.Push.Dialog.v2/0.0.3840.2160@0.0.3840.2160" timestamp="1607570295395" />
+    <state x="611" y="88" width="580" height="214" key="Vcs.Push.Dialog.v2/35.27.1565.873@35.27.1565.873" timestamp="1607583437680" />
     <state x="-59" y="161" width="1365" height="675" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1607583146701">
       <screen x="35" y="27" width="1565" height="873" />
     </state>
