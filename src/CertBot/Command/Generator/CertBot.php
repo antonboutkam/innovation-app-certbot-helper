@@ -134,7 +134,16 @@ class CertBot extends Command {
         $bHadErrors = false;
         foreach($oDnsNameIterator as $oDnsName)
         {
+
+            if(file_exists("{$this->oOutputDir}/live/{$oDnsName}"))
+            {
+                echo "Cert for {$oDnsName} already exists, SKIPPING ". PHP_EOL;
+                continue;
+            }
+
+
             $oDnsNameCollection = new DnsNameCollection();
+
             $oDnsNameCollection->add($oDnsName);
             $oDockerCertGenerator = new Process($oDockerHelper->makeRunCommand($this->oEmail, $oDnsNameCollection, $this->oOutputDir));
 
