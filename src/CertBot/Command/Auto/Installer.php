@@ -4,6 +4,7 @@ namespace Hurah\CertBot\Command\Auto;
 
 use Hurah\CertBot\Helper\DirectoryStructure;
 use Hurah\CertBot\Helper\DockerCompose;
+use Hurah\Types\Util\FileSystem;
 use Hurah\Types\Util\JsonUtils;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
@@ -20,7 +21,7 @@ class Installer extends Command {
     protected function execute(InputInterface $input, OutputInterface $output) {
 
         $oCertsPath = DirectoryStructure::getDataDir()->extend('queue')->extend('certs');
-        $oCertsArchive = $oCertsPath->extend('archive');
+        $oCertsArchive = $oCertsPath->extend('archive')->makeDir();
 
         $oCertsPathIterator = $oCertsPath->getDirectoryIterator();
         $bFilesFound = false;
@@ -29,13 +30,11 @@ class Installer extends Command {
                 echo "Skipping file {$oCertPath->getPathname()}, not a json file";
                 continue;
             }
-            $oCertsPath->move($oCertsArchive);
+            $oCertsPath->move(FileSystem::makePath($oCertsArchive, $oCertPath->getBasename()));
 
             $sCertJobInfo = file_get_contents($oCertPath->getPathname());
             $aCertJobInfo = JsonUtils::decode($sCertJobInfo);
-        }
 
-        if ($bFilesFound) {
             $oDockerCompose = new DockerCompose();
             $output->writeln("Stopping http server");
             $oDockerCompose->run('http', 'stop');

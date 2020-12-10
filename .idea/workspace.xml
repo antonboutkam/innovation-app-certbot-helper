@@ -21,7 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0d125806-e425-4a95-84ff-41cb4be5575e" name="Default Changelist" comment="Start file watch script">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/certbot-inotifywait.sh" beforeDir="false" afterPath="$PROJECT_DIR$/bin/certbot-inotifywait.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CertBot/Command/Auto/Installer.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/CertBot/Command/Auto/Installer.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,9 +186,17 @@
       <updated>1607584020454</updated>
       <workItem from="1607584021649" duration="97000" />
       <workItem from="1607584578979" duration="38000" />
-      <workItem from="1607584710978" duration="29000" />
+      <workItem from="1607584710978" duration="325000" />
+      <workItem from="1607585483903" duration="198000" />
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Start file watch script">
+      <created>1607584748401</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1607584748401</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,11 +308,11 @@
       <screen x="0" y="0" width="3840" height="2160" />
     </state>
     <state x="1412" y="673" key="SettingsEditor/0.0.3840.2160@0.0.3840.2160" timestamp="1607432803475" />
-    <state x="611" y="88" width="580" height="214" key="Vcs.Push.Dialog.v2" timestamp="1607583480926">
+    <state x="611" y="88" width="580" height="214" key="Vcs.Push.Dialog.v2" timestamp="1607584751610">
       <screen x="35" y="27" width="1565" height="873" />
     </state>
     <state x="1414" y="150" width="808" height="528" key="Vcs.Push.Dialog.v2/0.0.3840.2160@0.0.3840.2160" timestamp="1607570295395" />
-    <state x="611" y="88" width="580" height="214" key="Vcs.Push.Dialog.v2/35.27.1565.873@35.27.1565.873" timestamp="1607583480926" />
+    <state x="611" y="88" width="580" height="214" key="Vcs.Push.Dialog.v2/35.27.1565.873@35.27.1565.873" timestamp="1607584751610" />
     <state x="-59" y="161" width="1365" height="675" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1607583146701">
       <screen x="35" y="27" width="1565" height="873" />
     </state>
