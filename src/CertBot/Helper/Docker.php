@@ -46,7 +46,7 @@ class Docker
         $aDnsNames = [];
         foreach($oDnsNameCollection->toArray() as $oDnsName)
         {
-            if(file_exists("/var/lib/letsencrypt/live/{$oDnsName}"))
+            if(file_exists("{$oOutputDir}/live/{$oDnsName}"))
             {
                 echo "Cert for {$oDnsName} already exists, SKIPPING ". PHP_EOL;
                 continue;

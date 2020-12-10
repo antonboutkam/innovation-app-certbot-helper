@@ -25,9 +25,8 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d125806-e425-4a95-84ff-41cb4be5575e" name="Default Changelist" comment="Nog bugging letsencrypt with requests for certificates we already have anymore.&#10;Port mapping was in reverse order">
+    <list default="true" id="0d125806-e425-4a95-84ff-41cb4be5575e" name="Default Changelist" comment="Port has to be 80">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CertBot/Helper/DnsNameFinder.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/CertBot/Helper/DnsNameFinder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CertBot/Helper/Docker.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/CertBot/Helper/Docker.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -202,7 +201,8 @@
     <MESSAGE value="Renamed inotify script, added the script to bindir" />
     <MESSAGE value="Nog bugging letsencrypt with requests for certificates we already have anymore." />
     <MESSAGE value="Nog bugging letsencrypt with requests for certificates we already have anymore.&#10;Port mapping was in reverse order" />
-    <option name="LAST_COMMIT_MESSAGE" value="Nog bugging letsencrypt with requests for certificates we already have anymore.&#10;Port mapping was in reverse order" />
+    <MESSAGE value="Port has to be 80" />
+    <option name="LAST_COMMIT_MESSAGE" value="Port has to be 80" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1590" y="648" width="654" height="729" key="#PHP" timestamp="1607433470417">
@@ -253,10 +253,10 @@
       <screen x="0" y="0" width="3840" height="2160" />
     </state>
     <state x="1412" y="673" key="SettingsEditor/0.0.3840.2160@0.0.3840.2160" timestamp="1607432803475" />
-    <state x="1422" y="202" width="808" height="528" key="Vcs.Push.Dialog.v2" timestamp="1607569114437">
+    <state x="1418" y="176" width="808" height="528" key="Vcs.Push.Dialog.v2" timestamp="1607569752579">
       <screen x="0" y="0" width="3840" height="2160" />
     </state>
-    <state x="1422" y="202" width="808" height="528" key="Vcs.Push.Dialog.v2/0.0.3840.2160@0.0.3840.2160" timestamp="1607569114436" />
+    <state x="1418" y="176" width="808" height="528" key="Vcs.Push.Dialog.v2/0.0.3840.2160@0.0.3840.2160" timestamp="1607569752579" />
     <state x="1559" y="783" width="869" height="510" key="com.jetbrains.php.test.PhpNewTestDialog" timestamp="1607428841290">
       <screen x="0" y="0" width="3840" height="2160" />
     </state>
