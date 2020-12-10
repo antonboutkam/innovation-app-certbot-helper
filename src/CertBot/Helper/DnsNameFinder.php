@@ -49,7 +49,12 @@ class DnsNameFinder
             }
             else if(in_array((string) $oComposer->getType(), [PluginType::API, PluginType::SITE]))
             {
+                echo "This package is a domain " . PHP_EOL;
                 $aDnsList->add($oComposer->getExtra()['install_dir']);
+            }
+            else
+            {
+                echo "Unsupported type  " . $oComposer->getType() . PHP_EOL;
             }
 
         }

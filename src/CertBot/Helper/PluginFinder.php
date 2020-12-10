@@ -35,6 +35,7 @@ class PluginFinder
                 continue;
             }
 
+            echo "Success, is a candidate" . PHP_EOL;
             $aComposerObjects[] = Composer::fromArray($aComposer);
         }
         return $aComposerObjects;
