@@ -19,7 +19,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="0d125806-e425-4a95-84ff-41cb4be5575e" name="Default Changelist" comment="Innitial empty project / commit" />
+=======
+    <list default="true" id="0d125806-e425-4a95-84ff-41cb4be5575e" name="Default Changelist" comment="Port has to be 80">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CertBot/Helper/DnsNameFinder.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/CertBot/Helper/DnsNameFinder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Command/Generator/CertBotTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Command/Generator/CertBotTest.php" afterDir="false" />
+    </list>
+>>>>>>> Stashed changes
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -103,7 +111,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.jetbrains.php.phpunit.codeGeneration.PhpNewTestDialog.defaultLibrary" value="PHPUnit" />
     <property name="dumpAutoload /home/anton/Documents/sites/ia/certbot-helper/composer.json" value="--no-interaction --ansi --verbose" />
+<<<<<<< Updated upstream
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../util" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../api" />
+>>>>>>> Stashed changes
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -123,9 +135,13 @@
       <recent name="$PROJECT_DIR$/tests" />
     </key>
   </component>
-  <component name="RunManager" selected="PHPUnit.phpunit.xml.dist (1)">
+  <component name="RunManager" selected="PHPUnit.CertBotTest.testExecute">
     <configuration name="CertBotTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Test\Hurah\CertBot\Command\Generator\CertBotTest" configuration_file="$PROJECT_DIR$/phpunit.xml.dist" file="$PROJECT_DIR$/tests/Command/Generator/CertBotTest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <configuration name="CertBotTest.testExecute" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Test\Hurah\CertBot\Command\Generator\CertBotTest" configuration_file="$PROJECT_DIR$/phpunit.xml.dist" file="$PROJECT_DIR$/tests/Command/Generator/CertBotTest.php" method="testExecute" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="CertBotTest.testInitialize" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
@@ -146,6 +162,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.CertBotTest.testExecute" />
         <item itemvalue="PHPUnit.phpunit.xml.dist (1)" />
         <item itemvalue="PHPUnit.DockerTest" />
         <item itemvalue="PHPUnit.CertBotTest" />
@@ -287,11 +304,18 @@
       <screen x="0" y="0" width="3840" height="2160" />
     </state>
     <state x="1743" y="953" width="342" height="170" key="ComposerInitDialogKey/0.0.3840.2160@0.0.3840.2160" timestamp="1607432173943" />
+<<<<<<< Updated upstream
     <state x="717" y="286" width="374" height="384" key="FileChooserDialogImpl" timestamp="1607628342661">
       <screen x="35" y="27" width="1565" height="873" />
     </state>
     <state x="1674" y="640" width="432" height="484" key="FileChooserDialogImpl/0.0.3840.2160@0.0.3840.2160" timestamp="1607512478971" />
     <state x="717" y="286" width="374" height="384" key="FileChooserDialogImpl/35.27.1565.873@35.27.1565.873" timestamp="1607628342661" />
+=======
+    <state x="1670" y="614" width="432" height="484" key="FileChooserDialogImpl" timestamp="1607571215885">
+      <screen x="0" y="0" width="3840" height="2160" />
+    </state>
+    <state x="1670" y="614" width="432" height="484" key="FileChooserDialogImpl/0.0.3840.2160@0.0.3840.2160" timestamp="1607571215885" />
+>>>>>>> Stashed changes
     <state width="1788" height="634" key="GridCell.Tab.0.bottom" timestamp="1607438708973">
       <screen x="0" y="0" width="3840" height="2160" />
     </state>
@@ -324,6 +348,7 @@
       <screen x="0" y="0" width="3840" height="2160" />
     </state>
     <state x="1412" y="673" key="SettingsEditor/0.0.3840.2160@0.0.3840.2160" timestamp="1607432803475" />
+<<<<<<< Updated upstream
     <state x="611" y="88" width="580" height="214" key="Vcs.Push.Dialog.v2" timestamp="1607628507055">
       <screen x="35" y="27" width="1565" height="873" />
     </state>
@@ -333,6 +358,12 @@
       <screen x="35" y="27" width="1565" height="873" />
     </state>
     <state x="-59" y="161" width="1365" height="675" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/35.27.1565.873@35.27.1565.873" timestamp="1607583146701" />
+=======
+    <state x="1410" y="124" width="808" height="528" key="Vcs.Push.Dialog.v2" timestamp="1607570659963">
+      <screen x="0" y="0" width="3840" height="2160" />
+    </state>
+    <state x="1410" y="124" width="808" height="528" key="Vcs.Push.Dialog.v2/0.0.3840.2160@0.0.3840.2160" timestamp="1607570659963" />
+>>>>>>> Stashed changes
     <state x="1559" y="783" width="869" height="510" key="com.jetbrains.php.test.PhpNewTestDialog" timestamp="1607428841290">
       <screen x="0" y="0" width="3840" height="2160" />
     </state>
