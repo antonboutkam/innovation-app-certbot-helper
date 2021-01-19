@@ -5,8 +5,8 @@
         "symfony/console": "5.x-dev",
         "hurah/data-types": "^1.0.3",
         "hurah/innovation-app-util-http": "dev-master",
-        "php" : "^7.4",
-        "ext-json": "^7.4"
+        "php" : "^7.4 || 8.0.*",
+        "ext-json": "*"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.3@dev"
