@@ -39,6 +39,11 @@ class DnsNameFinder
                 if($bIsSsl && isset($aDomainConfig['DOMAIN']))
                 {
                     $aDnsList->add($aDomainConfig['DOMAIN']);
+                    if(!preg_match('/^admin\./', $aDomainConfig['DOMAIN']))
+                    {
+                        $aDnsList->add('admin.' . $aDomainConfig['DOMAIN']);
+                    }
+
                 }
             }
             else if(in_array((string) $oComposer->getType(), [PluginType::API, PluginType::SITE]))

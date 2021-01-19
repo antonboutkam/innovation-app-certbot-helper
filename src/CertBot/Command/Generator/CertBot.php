@@ -108,9 +108,19 @@ class CertBot extends Command {
         {
             throw new NullPointerException("Email not initialized");
         }
+
+        if(!$this->oEmail->isValid())
+        {
+            throw new InvalidArgumentException("Email field does not contain a valid emailaddress {$this->oEmail}.");
+        }
+
         if(!$this->oDnsNameCollection instanceof DnsNameCollection)
         {
             throw new NullPointerException("No DNS names initialized");
+        }
+        elseif($this->oDnsNameCollection->isEmpty())
+        {
+            throw new InvalidArgumentException("No DNS names to request certificates for.");
         }
 
         $outputStyle = new OutputFormatterStyle('white', 'blue', ['bold', 'blink']);
